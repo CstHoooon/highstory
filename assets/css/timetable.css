@@ -1,0 +1,101 @@
+/* 시간표 스타일 */
+
+#timetableSearchForm {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#timetableResult .card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#timetableResult .card-header {
+    border-radius: 8px 8px 0 0;
+}
+
+#timetableResult table {
+    margin-bottom: 0;
+}
+
+#timetableResult tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+#timetableResult tbody td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* 주간 시간표 스타일 */
+.timetable-weekly {
+    font-size: 0.95rem;
+}
+
+.timetable-weekly th {
+    background-color: #e9ecef;
+    font-weight: 600;
+    padding: 12px 8px;
+    white-space: nowrap;
+}
+
+.timetable-weekly td {
+    padding: 12px 8px;
+    min-height: 50px;
+}
+
+.timetable-weekly tbody td:first-child {
+    background-color: #f8f9fa;
+}
+
+#loadingIndicator {
+    padding: 40px;
+}
+
+#errorMessage {
+    margin-top: 20px;
+}
+
+/* 새로고침 섹션 */
+#refreshSection .card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+}
+
+#refreshSection .card-body {
+    padding: 20px;
+}
+
+#refreshBtn {
+    white-space: nowrap;
+}
+
+#refreshBtn:disabled {
+    cursor: not-allowed;
+}
+
+#lastUpdateTime {
+    font-weight: 600;
+    color: #495057 !important;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+    #timetableSearchForm .row {
+        margin-bottom: 10px;
+    }
+    
+    #timetableResult .card-header h4 {
+        font-size: 1.2rem;
+    }
+    
+    .timetable-weekly {
+        font-size: 0.75rem;
+    }
+    
+    .timetable-weekly th,
+    .timetable-weekly td {
+        padding: 8px 4px;
+    }
+}
+
